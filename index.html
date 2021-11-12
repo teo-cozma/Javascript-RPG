@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <h1>Enchanted arena</h1>
+    
+<header>
+    <div class="grid-container" id="creationPanel">
+        <form action="" method="get" id="cp">
+            <!--Player 1-->
+            <div id="creation_panel_1">
+                <img src="images/player1.png" alt="p1" width="120">
+                <img src="" alt="..." id="avatar1"><br>
+                <div class="player_input">
+                    <label for="name">Name: <br> <input type="text" id="name1" oninput="fight()" autocomplete="off"></label> <br>
+                    <div class="dropdown-menu">
+                        <label for="race"> Race : <br>
+                            <select name="race" id="race1">
+                                <option value="">Choose your character</option>
+                                <option value="assassin2.png">Assassin, weapon : Double-blades</option>
+                                <option value="orc.png">Orc, weapon : axe</option>
+                                <option value="wizard.png">Wizard, weapon : staff</option>
+                                <option value="elf.png">Elf, weapon : bow</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" id="submit">FIGHT !!!</button>
+            
+            <!--Player 2-->
+            <div id="creation_panel_2">
+                <img src="images/player2.png" alt="p2" width="120">
+                <img src="" alt="..." id="avatar2"><br>
+                <div class="player_input">
+                    <label for="name">Name: <br> <input type="text" id="name2" oninput="fight()" autocomplete="off"></label> <br>
+                    <div class="dropdown-menu">
+                        <label for="race"> Race : <br>
+                            <select name="race" id="race2">
+                                <option value="">Choose your character</option>
+                                <option value="assassin2.png">Assassin, weapon : Double-blades</option>
+                                <option value="orc.png">Orc, weapon : axe</option>
+                                <option value="wizard.png">Wizard, weapon : staff</option>
+                                <option value="elf.png">Elf, weapon : bow</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</header>
+
+
+<body>
+    <main>
+        <div class="player_log" id="gamelog"></div>
+
+        <div id="characters_stats">
+            <div class="Player_1">
+                <label for="Player_1" ><span id="player_1">Player 1</span> <br> 
+                    <progress id="health1" name="Player_1" value="100" max="100"></progress>
+                    <br>
+                </label>
+            </div>
+            <div class="versus">
+                <img src="images/versus3.png" alt="versus" width="100" id="versus">
+            </div>
+            <div class="Player_2">
+                <label for="Player_2"><span id="player_2">Player 2</span> <br> 
+                    <progress id="health2" name="Player_2" value="100" max="100"></progress>
+                    <br>
+                </label>
+            </div>
+        </div>
+        
+        <div id="arena">
+            <div class="positions">
+                <img src="" alt="" id="position1">
+            </div>
+
+            <div id="modalBox" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close">&times;</span>
+                    <br>
+                    <p id="boxText"></p>
+                </div>
+            </div>
+
+            <div class="positions">
+                <img src="" alt="" id="position2">
+            </div>
+        </div>
+    
+        <div class="button_panel">
+            <div class="p1">
+                <button type="button" id="hit1">Hit</button>
+                <button type="button" id="heal1">Heal</button>
+                <button type="button" id="yield1">Yield</button>
+            </div>
+            <div class="p2">
+                <button type="button" id="hit2">Hit</button>
+                <button type="button" id="heal2">Heal</button>
+                <button type="button" id="yield2">Yield</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        &#169;2021 A game created by Brigita and Teo
+    </footer>
+    
+    <script src="game_script.js"></script>
+</body>
+</html>
