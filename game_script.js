@@ -219,7 +219,7 @@ modalBox.style.display= "none";
 
 yield1.addEventListener('click', () => {
     modalBox.style.display= "block";
-    boxText.innerHTML = `Game over!<br> I ${name1.value}, surrender. ${name2.value} has won, fair and square!`;
+    boxText.innerHTML = `Game over!<br> I, ${name1.value}, surrender. ${name2.value} has won, fair and square!`;
 
     gameBTN();
 
@@ -233,7 +233,7 @@ yield1.addEventListener('click', () => {
 
 yield2.addEventListener('click', () => {
     modalBox.style.display= "block";
-    boxText.innerHTML = `Game over!<br> I ${name2.value}, surrender. ${name1.value} has won, fair and square!`;
+    boxText.innerHTML = `Game over!<br> I, ${name2.value}, surrender. ${name1.value} has won, fair and square!`;
     
     gameBTN();
     
