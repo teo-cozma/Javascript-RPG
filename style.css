@@ -198,6 +198,11 @@ progress {
     border-radius: 4px;
 }
 
+#versus {
+    width: 100px;
+    height: 90px;
+}
+
 #arena {
     margin: 0 auto;
     display: flex;
