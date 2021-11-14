@@ -1,5 +1,5 @@
 // Creating the characters
-function Character(race, weapon, picture){
+/*function Character(race, weapon, picture){
     this.race = race;
     this.weapon = weapon;
     this.picture = picture;
@@ -19,39 +19,39 @@ function Character(race, weapon, picture){
     this.displayChar = function(){
         return console.log(`I am a ${this.race}, I wield a ${this.weapon}, my total health point are ${this.maxHealth}`);
     };
-}
+}*/
 
 var assassin = {
     race : 'assassin',
     weapon : 'blades',
     picture : "assassin2.png",
-}
+};
 
 var orc = {
     race : 'orc',
     weapon : 'axe',
     picture : "orc.png",
-}
+};
 
 var elf = {
     race : 'elf',
     weapon : 'bow',
     picture : "elf.png",
-}
+};
 
 var wizard = {
     race : 'wizard',
     weapon : 'staff',
     picture : "wizard.png",
-}
+};
 
 function fight() {
     if((name1.value == " ") || (name2.value == " ")) { 
            button.disabled = true; 
        } else { 
            button.disabled = false;
-       };
-};
+       }
+}
 
 // Changing the images according to the character type
 var race1 = document.getElementById('race1');
@@ -110,7 +110,7 @@ button.addEventListener('click', () => {
 
     fillArena();
     reset();
-})
+});
 
 // Only applicable to the arena
 function reset() {
@@ -160,7 +160,7 @@ hit1.addEventListener('click', () => {
             creationPanel.style.display = "grid";
             emptyNames();
         });
-    };
+    }
     
 });
 
@@ -184,7 +184,7 @@ hit2.addEventListener('click', () => {
             creationPanel.style.display = "grid";
             emptyNames();
         });
-    };
+    }
     
 });
 
@@ -204,7 +204,7 @@ heal2.addEventListener('click', () => {
     let revive2 = Math.floor((Math.random() * 30) + 1);
     health2.value += revive2;
     gamelog.innerText += `${name2.value} is healing and has regained ${revive2} health points.` + '\r\n';
-})
+});
 
 
 // Yield, Game over

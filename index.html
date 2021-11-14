@@ -6,66 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPG game</title>
     <link rel="stylesheet" href="style.css">
+
+    <meta name="description" content="A new challenge covering more of the basics of Javascript, in video game format ! A team effort between teo-cozma and Brigilets.">
 </head>
-    <h1>Enchanted arena</h1>
-    
-<header>
-    <div class="grid-container" id="creationPanel">
-        <form action="" method="get" id="cp">
-            <!--Player 1-->
-            <div id="creation_panel_1">
-                <img src="images/player1.png" alt="p1" width="120">
-                <img src="" alt="..." id="avatar1"><br>
-                <div class="player_input">
-                    <label for="name">Name: <br> <input type="text" id="name1" oninput="fight()" autocomplete="off"></label> <br>
-                    <div class="dropdown-menu">
-                        <label for="race"> Race : <br>
-                            <select name="race" id="race1">
-                                <option value="">Choose your character</option>
-                                <option value="assassin2.png">Assassin, weapon : Double-blades</option>
-                                <option value="orc.png">Orc, weapon : axe</option>
-                                <option value="wizard.png">Wizard, weapon : staff</option>
-                                <option value="elf.png">Elf, weapon : bow</option>
-                            </select>
-                        </label>
-                    </div>
-                </div>
-            </div>
-
-            <button type="button" id="submit">FIGHT !!!</button>
-            
-            <!--Player 2-->
-            <div id="creation_panel_2">
-                <img src="images/player2.png" alt="p2" width="120">
-                <img src="" alt="..." id="avatar2"><br>
-                <div class="player_input">
-                    <label for="name">Name: <br> <input type="text" id="name2" oninput="fight()" autocomplete="off"></label> <br>
-                    <div class="dropdown-menu">
-                        <label for="race"> Race : <br>
-                            <select name="race" id="race2">
-                                <option value="">Choose your character</option>
-                                <option value="assassin2.png">Assassin, weapon : Double-blades</option>
-                                <option value="orc.png">Orc, weapon : axe</option>
-                                <option value="wizard.png">Wizard, weapon : staff</option>
-                                <option value="elf.png">Elf, weapon : bow</option>
-                            </select>
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-</header>
-
 
 <body>
+    <h1>Enchanted arena</h1>
+    
+    <header>
+        <div class="grid-container" id="creationPanel">
+            <form action="..." method="get" id="cp">
+                <!--Player 1-->
+                <div id="creation_panel_1">
+                    <img src="images/player1.png" alt="p1" width="120">
+                    <img src="..." alt="..." id="avatar1"><br>
+                    <div class="player_input">
+                        <label for="name1">Name: <br> <input type="text" id="name1" oninput="fight()" autocomplete="off"></label> <br>
+                        <div class="dropdown-menu">
+                            <label for="race1"> Race : <br>
+                                <select name="race1" id="race1">
+                                    <option value="">Choose your character</option>
+                                    <option value="assassin2.png">Assassin, weapon : Double-blades</option>
+                                    <option value="orc.png">Orc, weapon : axe</option>
+                                    <option value="wizard.png">Wizard, weapon : staff</option>
+                                    <option value="elf.png">Elf, weapon : bow</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" id="submit">FIGHT !!!</button>
+                
+                <!--Player 2-->
+                <div id="creation_panel_2">
+                    <img src="images/player2.png" alt="p2" width="120">
+                    <img src="..." alt="..." id="avatar2"><br>
+                    <div class="player_input">
+                        <label for="name2">Name: <br> <input type="text" id="name2" oninput="fight()" autocomplete="off"></label> <br>
+                        <div class="dropdown-menu">
+                            <label for="race2"> Race : <br>
+                                <select name="race2" id="race2">
+                                    <option value="">Choose your character</option>
+                                    <option value="assassin2.png">Assassin, weapon : Double-blades</option>
+                                    <option value="orc.png">Orc, weapon : axe</option>
+                                    <option value="wizard.png">Wizard, weapon : staff</option>
+                                    <option value="elf.png">Elf, weapon : bow</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+
     <main>
         <div class="player_log" id="gamelog"></div>
 
         <div id="characters_stats">
             <div class="Player_1">
-                <label for="Player_1" ><span id="player_1">Player 1</span> <br> 
-                    <progress id="health1" name="Player_1" value="100" max="100"></progress>
+                <label for="health1" ><span id="player_1">Player 1</span> <br> 
+                    <progress id="health1" value="100" max="100"></progress>
                     <br>
                 </label>
             </div>
@@ -73,8 +75,8 @@
                 <img src="images/versus3.png" alt="versus" width="100" id="versus">
             </div>
             <div class="Player_2">
-                <label for="Player_2"><span id="player_2">Player 2</span> <br> 
-                    <progress id="health2" name="Player_2" value="100" max="100"></progress>
+                <label for="health2"><span id="player_2">Player 2</span> <br> 
+                    <progress id="health2" value="100" max="100"></progress>
                     <br>
                 </label>
             </div>
@@ -82,7 +84,7 @@
         
         <div id="arena">
             <div class="positions">
-                <img src="" alt="" id="position1">
+                <img src="..." alt="..." id="position1">
             </div>
 
             <div id="modalBox" class="modal">
@@ -94,7 +96,7 @@
             </div>
 
             <div class="positions">
-                <img src="" alt="" id="position2">
+                <img src="..." alt="..." id="position2">
             </div>
         </div>
     
@@ -118,5 +120,6 @@
     </footer>
     
     <script src="game_script.js"></script>
+
 </body>
 </html>
